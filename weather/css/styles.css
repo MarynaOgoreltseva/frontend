@@ -1,0 +1,134 @@
+* {
+    transition: all .1s ease-in;
+    }  /*делает более плавный переход*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #3399cc;
+    margin: 0;
+    color: white;
+    border: 20px solid #2b81ac;
+    box-sizing: border-box;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+
+h1,
+h2 {
+    margin-left: 15%;
+}
+
+ul {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    font-size: 0;
+
+    max-width: 580px;
+    min-width: 400px;
+}
+
+li {
+    border: 4px solid white;
+    height: 25%;
+    width: 25%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+    border-bottom: transparent;
+    border-left: transparent;
+
+}
+
+p {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 70px;  /*vertical-align:middle;*/
+}
+
+span {
+    color: white;
+    opacity: 0.5;
+}
+
+
+ul:hover>li { /**/
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+ul>li:hover { /*увеличили специфичность если поставить клас не сработает*/
+    opacity: 1;
+}
+
+.Moscow,
+.Lisbon,
+.NewDeli {
+    border: 4px solid white; /* свойство повторяется в li*/
+    border-bottom: transparent; /* свойство повторяется в li*/
+}
+
+.Lisbon {
+    width: 50%;
+    background: #39c;
+}
+
+
+.SanFrancisco { /*не знаю как обратиться  к последнему дабл сан франц*/
+    background: #c69;
+    width: 50%;
+}
+
+
+.bigblock {
+    width: 100%;
+    background: rgb(102, 102, 153);
+    border: 4px solid white; /* свойство повторяется в li*/
+}
+
+
+.Tokyo {
+    background: #396;
+}
+
+.Paris {
+    background: #3cc;
+}
+
+.Belgrad {
+    background: #969;
+}
+
+.Moscow {
+    background: #c24747;
+}
+
+.Moscow {
+    background: #c24747;
+}
+
+.TelAviv {
+    background: #e2674a;
+}
+
+.Cair {
+    background: #ffcc66;
+}
+
+.NewYork {
+    background: #9c9;
+}
+
+.NewDeli {
+    background: #699;
+}
