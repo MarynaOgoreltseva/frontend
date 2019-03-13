@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    background-color: #f1f1f1;
+    padding: 0;
+    color: #c2c2c2;
+}
+
+.form,
+.main {
+    width: 85%;
+    margin: 40px auto;
+}
+
+input[type="text"],
+input[type="image"] {
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    background-color: rgba(118,117,128,0);
+}
+
+input[type="text"] {
+    width: calc(90% - 20px);
+    font-size: 100px;
+    font-weight: 700;
+    margin-left: 20px;
+    color: #ec5a62;
+}
+
+input::-webkit-input-placeholder {
+    color: #c2c2c2;
+}
+
+/*input::-webkit-input-placeholder:focus {
+    color: #ec5a62;
+}*/
+
+input[type="image"] {
+    width: 8%;
+}
+
+input[type="image"]:hover { /*списала с оригинала у меня работает криво*/
+    -webkit-transform: translate3d(0,-50%,0) scale(1.1);
+    transform: translate3d(0,-50%,0) scale(1.1);
+}
+
+ul {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+    min-width: 300px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    border-radius: 5px;
+    background-color: rgba(118,117,128,0.05);
+    margin: 5px 20px;
+    width: calc(100% - 60px);
+    height: 50px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+li:hover {
+    background-color: rgba(118,117,128,0.1);
+    color: #ec5a62;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #c2c2c2;
+    width: 100%;
+    height: 50px;
+}
+
+a:hover {
+    color: #ec5a62;
+}
+
+.People img {
+    border-radius: 30px;
+}
+
+h4 { 
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+h3 {
+    padding-left: 20px;
+    font-weight: 800;
+}
