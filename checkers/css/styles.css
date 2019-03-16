@@ -1,0 +1,126 @@
+h1 {
+    text-align: center;
+}
+
+.field {
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+                  linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-color: #eee;
+    background-size: 200px 200px;
+    background-position: 0 0, 100px 100px;
+    width: 800px;
+    height: 800px;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.checker {
+   /*background-image: linear-gradient( red, black),
+ linear-gradient( black, red);
+
+ background: radial-gradient(circle at 50% 50%, white, yellow);
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    z-index: 100;
+     background:
+    radial-gradient(7em 7em at 35% 35%, red 50%, transparent 50%),
+    radial-gradient(7em 7em at 50% 50%, gold 50%, transparent 50%),
+    radial-gradient(7em 7em at 65% 65%, blue 50%, transparent 50%);
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 240px;*/
+    border-radius: 50%;
+    z-index: 100;
+    background: 
+    radial-gradient(100px 100px at 50% 50%, #EDC18D 8%, transparent 14%), 
+    radial-gradient(100px 100px at 50% 50%, #B58554 10%, transparent 18%), 
+    radial-gradient(100px 100px at 50% 50%, #b18553 20%, transparent 22%),
+    radial-gradient(100px 100px at 50% 50%, #F1C092 30%, transparent 26%),
+    radial-gradient(100px 100px at 50% 50%, #D7AA7B 40%, transparent 30%),
+    radial-gradient(100px 100px at 50% 50%, #E6B98B 50%, transparent 34%);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.checker.a {
+    position: absolute;
+    left:100px;
+    top:0;
+}
+
+.checker.b {
+    position: absolute;
+    left:300px;
+    top:0;
+}
+
+.checker.c {
+    position: absolute;
+    left:500px;
+    top:0;
+}
+
+.checker.d {
+    position: absolute;
+    left:700px;
+    top:0;
+}
+
+.checker.e {
+    position: absolute;
+    left:0;
+    top:100px;
+}
+
+.checker.f {
+    position: absolute;
+    left:200px;
+    top:100px;
+}
+
+.checker.g {
+    position: absolute;
+    left:400px;
+    top:100px;
+}
+
+.checker.h {
+    position: absolute;
+    left:600px;
+    top:100px;
+}
+
+.line8 {
+    position: absolute;
+    top: 0;
+}
+
+.line6 {
+    position: absolute;
+    top: 200px;
+}
+
+.line2 {
+    position: absolute;
+    top: 600px;
+}
+
+.line7 {
+    position: absolute;
+    top: 0;
+}
+
+.line3 {
+    position: absolute;
+    top: 400px;
+}
+
+.line1 {
+    position: absolute;
+    top: 600px;
+}
