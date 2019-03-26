@@ -74,7 +74,7 @@ body {
 }
 
 .product_slider__active {
-    border: 2px solid rgba(255,255,255,.46);
+    box-shadow: 0 0 7px rgba(255,255,255,.5);
     background-color: #1f273f;
 }
 
@@ -125,19 +125,25 @@ body {
 }
 
 .rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
-.rating > span {
-    display: inline-block;
-    position: relative;
-    width: 12px;
+.rating_star::before {
+    content: '\2605';
+    color: #7f7f7f;
 }
 
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-    content: "\2605";
-    position: absolute;
-    color: #f7c00e;
+.rating_star:hover:before,
+.rating_star:hover ~ .rating_star::before {
+    color: yellow;
+}
+
+.rating[data-rating="4"]:not(:hover) .rating_star:nth-child(n + 2)::before,
+.rating[data-rating="3"]:not(:hover) .rating_star:nth-child(n + 3)::before,
+.rating[data-rating="5"]:not(:hover) .rating_star:nth-child(n + 1)::before,
+.rating[data-rating="2"]:not(:hover) .rating_star:nth-child(n + 4)::before,
+.rating[data-rating="1"]:not(:hover) .rating_star:nth-child(n + 5)::before {
+    color: yellow;
 }
