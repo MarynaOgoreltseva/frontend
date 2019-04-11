@@ -1,0 +1,139 @@
+.header {
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  color: white;
+  font: 'Poppins', sans-serif;
+}
+.header_nav {
+  padding-top: 35px;
+}
+.header_title {
+  font-size: 60px;
+  padding-top: 240px;
+}
+.header_text {
+  font-size: 30px;
+  padding-top: 35px;
+  margin-bottom: 70px;
+}
+.header_button {
+  padding-bottom: 260px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nav_link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 15px;
+  border-bottom: 1px solid transparent;
+}
+.nav_link:hover {
+  border-color: #e71cb4;
+  color: #e71cb4;
+}
+.button {
+  font: 16px/24px 'Poppins', sans-serif;
+  background-color: transparent;
+  border-radius: 20px;
+  color: red;
+  padding: 15px 20px;
+}
+.button__red {
+  background: red;
+}
+.content {
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+}
+.content_title {
+  font-size: 62px;
+  color: #e71cb4;
+  padding-top: 150px;
+}
+.content_describe {
+  font-size: 32px;
+  line-height: 48px;
+  padding-top: 95px;
+  padding-bottom: 150px;
+}
+.content_report {
+  font-size: 22px;
+  line-height: 40px;
+  padding-top: 80px;
+}
+.content_version {
+  font-size: 30px;
+  padding-top: 75px;
+}
+.content_subject {
+  font-size: 17px;
+  padding-top: 45px;
+}
+.content_button {
+  padding-top: 50px;
+  padding-bottom: 155px;
+}
+.competitors {
+  height: 200px;
+  background: linear-gradient(to top, #ff00cc, #333399 64%);
+}
+.title {
+  color: red;
+  font-size: 62px;
+  display: block;
+  text-align: center;
+}
+.sponsorship {
+  background: white;
+}
+.sponsorship_title {
+  padding-top: 90px;
+}
+.sponsorship_list {
+  padding-top: 80px;
+  padding-bottom: 115px;
+}
+.companies {
+  display: flex;
+  justify-content: center;
+}
+.companies_name:not(:first-child) {
+  padding-left: 50px;
+}
+.jury {
+  background: #ffe9eb;
+  color: #444;
+}
+.jury_title {
+  padding-top: 100px;
+}
+.jury_list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.jury_item {
+  padding: 80px 20px 0;
+  display: block;
+  text-align: center;
+}
+.jury_name {
+  font-size: 30px;
+  padding: 25px 0;
+}
+.jury_position {
+  font-size: 24px;
+}
+.wrap {
+  width: 1170px;
+  margin: 0 auto;
+}

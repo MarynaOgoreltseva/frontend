@@ -1,0 +1,15 @@
+include ../button/button.pug
+include ../nav/nav.pug
+
+mixin header(props)
+    .header()
+        .header_nav
+            +nav()
+        .header.main
+            .header_title=props.title
+            .header_text=props.text
+            .header_button
+                +button({
+                        name: 'Download Our Case Study'
+                })
+

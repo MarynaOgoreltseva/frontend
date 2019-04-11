@@ -1,0 +1,11 @@
+include ../title/title.pug
+include ../companies/companies.pug
+
+mixin sponsorship()
+    .sponsorship()
+        .sponsorship_title
+            +title({
+                text: 'Sponsorship'
+            })
+        .sponsorship_list
+            +companies

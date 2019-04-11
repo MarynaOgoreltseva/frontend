@@ -1,0 +1,18 @@
+include ../header/header.pug
+include ../content/content.pug
+include ../competitors/competitors.pug
+include ../sponsorship/sponsorship.pug
+include ../jury/jury.pug
+
+mixin layout()
+    .layout
+        .wrap
+            +header({
+                title: 'Are you ready for the Battle?',
+                text: 'The clash between graphic designers'
+            })
+        +content()
+        +competitors()
+        +sponsorship()
+        +jury()
+

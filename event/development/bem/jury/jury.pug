@@ -1,0 +1,24 @@
+include ../title/title.pug
+
+mixin jury()
+    .jury
+        .jury_title
+            +title({
+                text: 'Jury 2017'
+            })
+        ul.jury_list
+            li.jury_item
+                img.jury-photo(src='../img/kyle-loftus.png', alt='')
+                h3.jury_name Kyle Loftus
+                h4.jury_position Creative Director
+            li.jury_item
+                img.jury-photo(src='../img/pete-bellis.png', alt='')
+                h3.jury_name Pete Bellis
+                h4.jury_position Creative Director
+            li.jury_item
+                img.jury-photo(src='../img/joe-gardner.png', alt='')
+                h3.jury_name Joe Gardner
+                h4.jury_position Creative Director
+
+
+
