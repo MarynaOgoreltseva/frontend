@@ -1,0 +1,26 @@
+.nav {
+    background-color: #5474fd;
+    color: white;
+    height: 8vh;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //padding-top: 27px;
+    }
+    &_h1 {
+        font: 700 24px/26px'Josefin Sans', sans-serif;
+    }
+    &_link {
+        font: 400 14px/26px 'Aleo', serif;
+        text-decoration: none;
+        color: white;
+    }
+    &_link:not(:last-child) {
+        margin-right: 40px;
+    }
+}

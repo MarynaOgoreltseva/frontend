@@ -1,0 +1,6 @@
+mixin country()
+
+    .country.layout(class=(countryModifier) ? 'country__' + countryModifier : '')
+        .country_content.layout_section(class=(countryContentPosition) ? 'country_content__' + countryContentPosition : '')
+            - var sectionModifier = 'city';
+            include ../section/spain.pug

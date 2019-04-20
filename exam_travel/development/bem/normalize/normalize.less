@@ -1,0 +1,22 @@
+@layoutWidth: 1120px;
+
+.layout {
+    min-width: @layoutWidth;
+    height: calc(100vh - 8vh);
+    &_section {
+        width: @layoutWidth;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+}
+
+button {
+    background: linear-gradient(45deg, #496bfe 0%,#496bfe 39%,#5474fd 40%,#5474fd 100%);
+    font: 16px/26px 'Aleo', serif;
+    letter-spacing: .075em;
+    color: white;
+    padding: 17px 35px;
+    text-transform: uppercase;
+    border: 0;
+}
+

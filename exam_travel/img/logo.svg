@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="95" height="25" viewBox="0 0 95 25">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 33.512px;
+        fill: #fff;
+        font-family: Poppins;
+      }
+    </style>
+  </defs>
+  <text id="Event" class="cls-1" x="-2.412" y="24.195">Event</text>
+</svg>

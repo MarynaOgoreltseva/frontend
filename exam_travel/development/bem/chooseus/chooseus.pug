@@ -1,0 +1,9 @@
+mixin chooseus()
+    .chooseus.layout
+        .chooseus_content.layout_section
+            .chooseus_description
+                - var sectionModifier = '';
+                include ../section/whyus.pug
+            .chooseus_picture
+                img.chooseus_photo1(src='../img/chooseus1.png', alt='')
+                img.chooseus_photo2(src='../img/chooseus2.png', alt='')

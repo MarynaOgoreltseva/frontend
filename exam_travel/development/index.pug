@@ -1,0 +1,27 @@
+include bem/header/header.pug
+include bem/nav/nav.pug
+include bem/chooseus/chooseus.pug
+include bem/country/country.pug
+include bem/comments/comments.pug
+include bem/footer/footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title Travel
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+        link(rel="stylesheet" href="style.css")
+        <link href="https://fonts.googleapis.com/css?family=Aleo|Josefin+Sans:400,700" rel="stylesheet">
+        link(rel='shortcut icon', href='favicon.ico', type='image/x-icon')
+    body
+        +header()
+        +nav()
+        +chooseus()
+        - var countryContentPosition = 'left';
+        +country()
+        - var countryModifier = 'next';
+        - var countryContentPosition = 'right';
+        +country()
+        +comments()
+        +footer()
