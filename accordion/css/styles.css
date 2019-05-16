@@ -1,0 +1,72 @@
+@font-face {
+    font-family: JF-Flat;
+    src: url('../font/JF-Flat-regular.eot');
+    src: url('../font/JF-Flat-regular.eot?iefix') format('eot'),
+    url('../font/JF-Flat-regular.woff') format('woff'),
+    url('../font/JF-Flat-regular.ttf') format('truetype'),
+    url('../font/JF-Flat-regular.svg#JF-Flat-regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f6704b;
+    font: 24px 'JF-Flat', sans-sefir;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 380px;
+}
+
+div {
+    height: 100px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    line-height: 100px;
+
+}
+
+span { vertical-align: middle; 
+    padding-left: 50px;
+    vertical-align: middle;
+
+}
+img {
+    vertical-align: middle;
+}
+
+.text{
+    font-size: 18px;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.location {
+    background-color: #620808;
+    color: #ffe9c1;
+}
+
+.music {
+    background-color: #a53f3f;
+    color: #f4ce74;
+}
+
+.notes {
+    background-color: #f4ce74;
+    color: #620808;
+}
+
+.books {
+    background-color: #ffe9c1;
+    color: #a53f3f;
+}
+
+.tendances {
+    background-color: #d5441c;
+    color: #ffe9c1;
+}
