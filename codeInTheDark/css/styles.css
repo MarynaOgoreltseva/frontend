@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+button:not(:first-of-type) {
+    margin-top: 5px;
+}
+
+.container_button__blue {
+    background: blue;
+}
+
+.container_button__green {
+    background: green;
+}
+
+.container_button__yellow {
+    background: yellow;
+}
+
+.container_button__red {
+    background: red;
+}
+
+.container_button__purple {
+    background: purple
+}
