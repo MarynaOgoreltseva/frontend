@@ -1,0 +1,68 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 325px;
+    &_album {
+        flex: 0 50%;
+        padding: 30px 40px 20px 40px;
+        box-sizing: border-box;
+        background-color: #272e2a;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &_image {
+        width: 225px;
+        height: 225px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    &_name {
+        color: white;
+        font: 20px 'Proxima Nova Cn Th', sans-serif;
+    }
+    &_artist{
+        color: #536259;
+        font: 14px 'Proxima Nova Cn Th', sans-serif;
+        padding-bottom: 10px;
+    }
+    &_list {
+        flex: 0 50%;
+        font: 16px 'Proxima Nova Rg', sans-serif;
+        color: #353535;
+        overflow-y: scroll;
+    }
+    &_song {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    &_track {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 30px;
+    }
+    &_track:nth-child(2n) {
+        background-color: #ddd8d3;
+    }
+    &_play {
+        opacity: 0;
+    }
+    
+}
+
+li:hover .content_play{
+    opacity: 1;
+}
+
+.active {
+    color: red;
+}
+
+._trackPicture,._trackAuthor {
+    display: none;
+}

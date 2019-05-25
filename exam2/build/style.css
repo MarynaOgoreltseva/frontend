@@ -1,0 +1,122 @@
+.header {
+  background: #f86f05;
+  display: flex;
+  justify-content: space-between;
+}
+.header_content {
+  display: flex;
+  flex: 0 10%;
+  padding: 20px;
+  justify-content: space-between;
+}
+.header_circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #af6023;
+}
+.header_logo {
+  text-align: center;
+  flex: 0 80%;
+  align-items: center;
+  display: flex;
+}
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('font/ProximaNova-Regular.eot');
+  src: local('font/Proxima Nova Regular'), local('ProximaNova-Regular'), url('font/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('font/ProximaNova-Regular.woff') format('woff'), url('font/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Proxima Nova Cn Th';
+  src: url('font/ProximaNovaCond-Thin.eot');
+  src: local('font/Proxima Nova Condensed Thin'), local('ProximaNovaCond-Thin'), url('font/ProximaNovaCond-Thin.eot?#iefix') format('embedded-opentype'), url('font/ProximaNovaCond-Thin.woff') format('woff'), url('font/ProximaNovaCond-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  background-color: #67584d;
+  margin: 0;
+}
+.layout {
+  max-width: 580px;
+  border-radius: 20px;
+  margin: auto;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 325px;
+}
+.content_album {
+  flex: 0 50%;
+  padding: 30px 40px 20px 40px;
+  box-sizing: border-box;
+  background-color: #272e2a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content_image {
+  width: 225px;
+  height: 225px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+.content_name {
+  color: white;
+  font: 20px 'Proxima Nova Cn Th', sans-serif;
+}
+.content_artist {
+  color: #536259;
+  font: 14px 'Proxima Nova Cn Th', sans-serif;
+  padding-bottom: 10px;
+}
+.content_list {
+  flex: 0 50%;
+  font: 16px 'Proxima Nova Rg', sans-serif;
+  color: #353535;
+  overflow-y: scroll;
+}
+.content_song {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.content_track {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.content_track:nth-child(2n) {
+  background-color: #ddd8d3;
+}
+.content_play {
+  opacity: 0;
+}
+li:hover .content_play {
+  opacity: 1;
+}
+.active {
+  color: red;
+}
+._trackPicture,
+._trackAuthor {
+  display: none;
+}
+.sidebar {
+  background-color: #1b1f1c;
+  height: 55px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+svg:hover {
+  cursor: pointer;
+}

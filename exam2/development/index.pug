@@ -1,0 +1,16 @@
+include bem/header/header.pug
+include bem/content/content.pug
+include bem/sidebar/sidebar.pug
+
+<!DOCTYPE html>
+html(lang="en")
+head
+    meta(charset="UTF-8")
+    title Grooveshark
+    link(rel="stylesheet" href="style.css")
+body
+    .layout
+        +header()
+        +content()
+        +sidebar()
+    script(type='text/javascript', src='js.js')
