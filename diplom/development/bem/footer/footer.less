@@ -1,0 +1,22 @@
+.footer {
+    background-color: #9f9acf;
+    padding-top: 77px;
+    padding-bottom: 77px;
+    &_content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_copy {
+        color: white;
+        font-size: 18px;
+        letter-spacing: .02em;
+        line-height: 32px;
+    }
+    @media(max-width:600px){
+        &_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

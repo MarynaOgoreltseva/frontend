@@ -1,0 +1,33 @@
+include ../item/item.pug
+
+mixin services()
+    .services
+        .services_content
+            .services_content-item
+                +item({
+                url: 'img/Icon-Graphic.png',
+                title: 'GRAPHIC DESIGN',
+                content: 'Cras mattis consectetur purus sit amet fermentum.',
+                modifier: 'item__dark'
+                })
+                +item({
+                url: 'img/Icon-Web.png',
+                title: 'WEB DEVELOPMENT',
+                content: 'Cras mattis consectetur purus sit amet fermentum.'
+                })
+                +item({
+                url: 'img/Icon-SEO.png',
+                title: 'SEO & MARKETING',
+                content: 'Cras mattis consectetur purus sit amet fermentum.'
+                })
+                +item({
+                url: 'img/Icon-Mobile.png',
+                title: 'MOBILE DEVELOPMENT',
+                content: 'Cras mattis consectetur purus sit amet fermentum.',
+                modifier: 'item__dark'
+                })
+            .services_icon
+                img.services_logo(src='img/services-icon.png')
+                .services_title OUR SERVICES
+                .services_text “Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.”
+                    .services_author - Borat -

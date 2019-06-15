@@ -1,0 +1,11 @@
+include ../social/social.pug
+
+mixin profile(props)
+    .profile
+        .profile_content
+            img.profile_photo(src=props.url)
+            .profile_text
+                .profile_name=props.name
+                .profile_position=props.position
+            .profile_social
+                +social(props.behance)

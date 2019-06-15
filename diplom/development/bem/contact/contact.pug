@@ -1,0 +1,22 @@
+include ../button/button.pug
+
+mixin contact()
+    .contact
+        .contact_content
+            .contact_logo
+                img.contact_icon(src="img/contact-icon.png")
+                .contact_title get in touch
+            .contact_home
+                img.contact_picture(src="img/Icon-address.png")
+                .contact_adress
+            .contact_phone
+                img.contact_picture(src="img/Icon-phone.png")
+            form.contact_form
+                input.contact_input(type='text', placeholder='Your Name')
+                input.contact_input(type='email', placeholder='Your Email')
+                textarea.contact_input(name='', id='', cols='30', rows='10', placeholder='Your Message')
+            .contact_button
+                +button('send message', 'button__dark')
+
+
+

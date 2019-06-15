@@ -1,0 +1,13 @@
+include ../button/button.pug
+
+mixin works()
+    .works
+        .works_content
+            .works_logo
+                img.works_icon(src="img/works-icon.png")
+                .works_title recent works
+            .works_item._works_item
+                .works_picture
+                    img.works_img(src="img/works.png")
+            .works_button
+                +button('View Gallery')

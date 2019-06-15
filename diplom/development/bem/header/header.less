@@ -1,0 +1,95 @@
+.header {
+    background-image: url(img/header-bg.png);
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    color: white;
+    &_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-align: center;
+    }
+    &_menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 37px;
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    &_logo {
+        line-height: 60px;
+    }
+    &_nav {
+        text-transform: uppercase;
+    }
+    &_link {
+        color: white;
+        text-decoration: none;
+        padding-right: 30px;
+        font-size: 24px;
+        line-height: 60px;
+        &:hover {
+            color: #e5e1f0;
+        }
+    }
+    &_item{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_title {
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 60px;
+        margin-bottom: 38px;
+    }
+    &_text {
+        font-size: 30px;
+        max-width: 680px;
+    }
+    &_nav {
+        display: flex;
+    }
+    &_nav&_nav__open {
+        display: flex;
+    }
+    &_nav-button {
+        display: none;
+    }
+    &_nav-button .fas {
+        color: white;
+        font-size: 20px;
+    }
+    &_close .fas {
+        color: white;
+        font-size: 20px;
+    }
+    &_close {
+        text-align: left;
+        display: none;
+    }
+    @media(max-width: 768px) {
+        &_nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            background-color: #b1aac6;
+            height: 100%;
+            padding: 20px;
+            text-align: right;
+        }
+        &_nav-button {
+            display: block;
+        }
+        &_close {
+            display: block;
+        }
+    }
+}

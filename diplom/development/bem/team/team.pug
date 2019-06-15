@@ -1,0 +1,25 @@
+include ../profile/profile.pug
+
+mixin team()
+    .team
+        .team_content.layout
+            .team_logo
+                img.team_icon(src="img/team-icon.png")
+                .team_title meet our team
+            .team_item._team_item
+                +profile({
+                url: 'img/miguel.png',
+                name: 'Miguel Obrien',
+                position: 'CEO & Founder',
+                behance: false
+                })
+                +profile({
+                url: 'img/jackie.png',
+                name: 'Jackie Carroll',
+                position: 'Art Director'
+                })
+                +profile({
+                url: 'img/ida.png',
+                name: 'Ida Morrison',
+                position: 'Designer'
+                })

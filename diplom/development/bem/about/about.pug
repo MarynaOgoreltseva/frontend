@@ -1,0 +1,20 @@
+include ../button/button.pug
+
+mixin about()
+    .about
+        .about_content.layout
+            .about_picture
+                img.about_photo(src='img/about.png')
+            .about_item
+                .about_text
+                    p.about_p
+                        |  Nullam quis risus eget urna 
+                        span.about_p__bold mollis ornare
+                        |  vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+                    p.about_p
+                        span.about_p__bold Morbi leo
+                        |  risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet 
+                        span.about_p__italic fermentum
+                        | . Sed posuere consectetur est at lobortis.
+                .about_button
+                    +button('Learn More')

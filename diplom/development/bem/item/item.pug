@@ -1,0 +1,7 @@
+mixin item(props)
+    .item(class=props.modifier)
+        .item_content
+            .item_photo
+                img.item_img(src=props.url)
+            .item_title=props.title
+            .item_text=props.content

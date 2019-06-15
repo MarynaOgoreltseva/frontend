@@ -1,0 +1,30 @@
+include bem/header/header.pug
+include bem/about/about.pug
+include bem/services/services.pug
+include bem/works/works.pug
+include bem/team/team.pug
+include bem/contact/contact.pug
+include bem/footer/footer.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        title creativ
+        link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css')
+        link(rel="stylesheet" href="style.css")
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin='anonymous')  
+        link(rel='stylesheet', href='https://kenwheeler.github.io/slick/slick/slick.css')
+        link(rel='stylesheet', href='slick-theme.css')
+        script(src='https://code.jquery.com/jquery-3.4.1.min.js', integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin='anonymous')
+        script(src='https://kenwheeler.github.io/slick/slick/slick.js')
+        script(type='text/javascript', src='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+        script(src='js/script.js')
+    body
+        +header()
+        +about()
+        +services()
+        +works()
+        +team()
+        +contact()
+        +footer()
